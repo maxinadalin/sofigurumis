@@ -1,8 +1,4 @@
 import { Fragment, useState, useEffect } from 'react'
-import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/outline'
-import { ChevronDownIcon, FilterIcon, MinusSmIcon, PlusSmIcon, ViewGridIcon } from '@heroicons/react/solid'
-import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import {get_categories} from '../../redux/actions/categories'
 import {get_products, get_filtered_products} from '../../redux/actions/products'
