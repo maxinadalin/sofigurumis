@@ -3,9 +3,7 @@ import store from "./store";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Error from "containers/error/error";
 import Home from "containers/home/home";
-import Registro from "components/auth/registro";
 import Activate from "components/auth/activate";
-import Login from "components/auth/login";
 import RecoverPass from "components/auth/recoverPass";
 import PasswordConfirm from "components/auth/PasswordConfirm";
 import Categorias from "containers/pages/categorias";
@@ -16,6 +14,8 @@ import TanksYou from "containers/pages/tanksYou";
 import Dashboard from "containers/pages/dashboard/dashboard";
 import OrdersDetails from "./containers/pages/dashboard/OrdersDetails/ordersDetails";
 import Profile from "containers/pages/dashboard/profile/profile";
+import Login from "containers/auth/login";
+import SingUp from "containers/auth/register"
 
 
 
@@ -29,7 +29,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
 
           {/* Authentication */}
-          <Route path="/registro" element={<Registro />}></Route>
+          <Route path="/registro" element={<SingUp />}></Route>
           <Route path="/activate/:uid/:token" element={<Activate />}></Route>
           <Route path="/Login" element={<Login/>}></Route>
           <Route path="/Recuperacion" element={<RecoverPass />}></Route>
@@ -65,7 +65,7 @@ function App() {
         </Routes>
       </Router>
     </Provider>
-  );
+  )
 }
 
 export default App;

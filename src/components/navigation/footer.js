@@ -91,7 +91,7 @@ const navigation = {
 
   function Footer() {
     return (
-        <footer className="bg-white" aria-labelledby="footer-heading">
+        <footer className="bg-gradient-to-b from-gray-200 to-gray-500" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
